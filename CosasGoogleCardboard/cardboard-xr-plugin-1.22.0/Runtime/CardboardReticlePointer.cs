@@ -173,28 +173,40 @@ public class CardboardReticlePointer : MonoBehaviour
             ResetParams();
         }
 
-        
+
         //Clics de mando.
-       
+
+
+
         RaycastHit hit2;
-           
+
+
+
         if (Physics.Raycast(transform.position, transform.forward, out hit2))
-        { 
-                
-            if (Input.GetButton("Fire1"))
+
+        {
+            //if (Input.GetButtonDown("Fire1") && !Input.GetButtonUp("Fire1")) //Primer frame en el que se toca Fire1, se puede usar como símil de pulsar/soltar
+            if (Input.GetButtonDown("Fire1")) 
+
             {
-                Debug.Log(hit2.point);
-                //_gazedAtObject?.SendMessage("OnPointerClick", hit2.point);
-            }
-            if (Input.GetButtonDown("Fire2"))
-            {
-                lineRenderer.SetPosition(0, transform.position);
+                lineRenderer.enabled = true;
+                lineRenderer.SetPosition(0, (transform.position - new Vector3(0.2f,0.2f,0)));
                 lineRenderer.SetPosition(1, hit2.point);
 
+
             }
+            if (Input.GetButtonUp("Fire1")) //Solo ocurre en un frame
+
+            {
+                lineRenderer.enabled = false;
+                Debug.Log(hit2.point);
+                _gazedAtObject?.SendMessage("OnPointerClick", hit2.point);
+
+            }
+            
         }
 
-            UpdateDiameters();
+        UpdateDiameters();
     }
 
     /// <summary>
