@@ -5,10 +5,10 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/LunarLandscape3D.unity
     guid: dd31ab46bae9d0c47b4251a246ac955e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/EscenaVideo.unity
     guid: 77b573a17e14ff04483dd689a01a337c
   m_configObjects:
