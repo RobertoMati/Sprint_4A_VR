@@ -1592,6 +1592,34 @@ PrefabInstance:
       propertyPath: fadeSpeed
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 4858260130211813193, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_Color.a
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442523180932497820, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442523180932497820, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442523180932497820, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442523180932497820, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442523180932497820, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6442523180932497820, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
     - target: {fileID: 7770885131770653345, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
       propertyPath: m_Name
       value: CambioEscena
@@ -1675,6 +1703,18 @@ PrefabInstance:
     - target: {fileID: 8481796962662879568, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139351691557030505, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_Camera
+      value: 
+      objectReference: {fileID: 1598209921}
+    - target: {fileID: 9139351691557030505, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9139351691557030505, guid: e9322127c0774f24caa5c0de8a81768f, type: 3}
+      propertyPath: m_PlaneDistance
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
