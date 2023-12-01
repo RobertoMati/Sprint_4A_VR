@@ -161,9 +161,11 @@ public class CardboardReticlePointer : MonoBehaviour
                 _gazedAtObject = hit.transform.gameObject;
                 _gazedAtObject.SendMessage("OnPointerEnter");
             }
-
+            
             bool isInteractive = (1 << _gazedAtObject.layer & ReticleInteractionLayerMask) != 0;
             SetParams(hit.distance, isInteractive);
+
+
         }
         else
         {
@@ -179,9 +181,6 @@ public class CardboardReticlePointer : MonoBehaviour
 
 
         RaycastHit hit2;
-
-
-
         if (Physics.Raycast(transform.position, transform.forward, out hit2))
 
         {
@@ -203,8 +202,14 @@ public class CardboardReticlePointer : MonoBehaviour
                 _gazedAtObject?.SendMessage("OnPointerClick", hit2.point);
 
             }
-            
+            if (Input.GetButtonUp("Fire2"))
+            {
+                Debug.Log("pium");
+                _gazedAtObject?.SendMessage("OnPointerClick", hit2.point);
+            }
+
         }
+        
 
         UpdateDiameters();
     }
