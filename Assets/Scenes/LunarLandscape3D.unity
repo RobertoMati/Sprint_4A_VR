@@ -6232,6 +6232,50 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 0}
+--- !u!1 &1841435541
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1841435543}
+  - component: {fileID: 1841435542}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1841435542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841435541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d466aab01cdf475478efb3d615a1b972, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &1841435543
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1841435541}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1849248777 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 5328012994577523099, guid: 4c7b4f4edddf3cf45b80e25986de3695, type: 3}
@@ -6321,12 +6365,32 @@ PrefabInstance:
       value: CanvasConsole
       objectReference: {fileID: 0}
     - target: {fileID: 5328803128383421482, guid: 6e5390561bc6eb745bdba8081ed8fe20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328803128383421482, guid: 6e5390561bc6eb745bdba8081ed8fe20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328803128383421482, guid: 6e5390561bc6eb745bdba8081ed8fe20, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 429275200}
     - target: {fileID: 5328803128383421482, guid: 6e5390561bc6eb745bdba8081ed8fe20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 11500000, guid: d466aab01cdf475478efb3d615a1b972, type: 3}
+    - target: {fileID: 5328803128383421482, guid: 6e5390561bc6eb745bdba8081ed8fe20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328803128383421482, guid: 6e5390561bc6eb745bdba8081ed8fe20, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: FadeToScene
+      objectReference: {fileID: 0}
+    - target: {fileID: 5328803128383421482, guid: 6e5390561bc6eb745bdba8081ed8fe20, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: SceneFader, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5446414637182025625, guid: 6e5390561bc6eb745bdba8081ed8fe20, type: 3}
       propertyPath: m_Pivot.x
@@ -6934,9 +6998,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2131826697}
+  - component: {fileID: 2131826698}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6957,6 +7022,18 @@ Transform:
   - {fileID: 1598209917}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2131826698
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2131826696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5e3926fdddd4090449377e38d5148764, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4845782514216823676
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7734,3 +7811,4 @@ SceneRoots:
   - {fileID: 63624158}
   - {fileID: 429275199}
   - {fileID: 1141563692}
+  - {fileID: 1841435543}
