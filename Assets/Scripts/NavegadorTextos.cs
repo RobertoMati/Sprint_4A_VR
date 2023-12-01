@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -13,7 +11,14 @@ public class NavegadorTextos : MonoBehaviour
 
     void Start()
     {
-        UpdateUI();
+        if (GameManager.tutorialDone)
+        {
+            canvasIntro.gameObject.SetActive(false);
+        }
+        else
+        {
+            UpdateUI();
+        }
     }
 
     // Llamado cuando se presiona el botón "Anterior".
@@ -38,6 +43,7 @@ public class NavegadorTextos : MonoBehaviour
         else if (currentIndex == panelesTextos.Length - 1)
         {
             canvasIntro.gameObject.SetActive(false);
+            GameManager.tutorialDone = true;
 
         }
     }
@@ -58,6 +64,6 @@ public class NavegadorTextos : MonoBehaviour
         prevButton.interactable = (currentIndex > 0);
         //nextButton.interactable = (currentIndex < panelesTextos.Length - 1);
 
-        
+
     }
 }
