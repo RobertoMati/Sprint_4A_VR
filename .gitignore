@@ -72,3 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 Assets/video/videodefinitivo_injected.mp4
 Assets/video/videodefinitivo_injected.mp4.meta
+
+*.mp4
+
+Assets/video/videodefinitivoo_.mp4.meta
