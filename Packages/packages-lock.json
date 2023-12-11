@@ -1,14 +1,5 @@
 {
   "dependencies": {
-    "com.google.xr.cardboard": {
-      "version": "file:../CosasGoogleCardboard/cardboard-xr-plugin-1.22.0",
-      "depth": 0,
-      "source": "local",
-      "dependencies": {
-        "com.unity.xr.management": "3.2.9",
-        "com.unity.xr.legacyinputhelpers": "2.1.4"
-      }
-    },
     "com.unity.cinemachine": {
       "version": "2.9.5",
       "depth": 0,

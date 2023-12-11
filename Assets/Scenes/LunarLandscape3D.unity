@@ -5134,8 +5134,6 @@ GameObject:
   - component: {fileID: 1328898110}
   - component: {fileID: 1328898109}
   - component: {fileID: 1328898108}
-  - component: {fileID: 1328898111}
-  - component: {fileID: 1328898112}
   - component: {fileID: 1328898113}
   - component: {fileID: 1328898115}
   - component: {fileID: 1328898114}
@@ -5220,31 +5218,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1328898111
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328898107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ab79775b446aef40ba4e56a8d4e45a2, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
---- !u!114 &1328898112
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1328898107}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dd68f027e715c44aa8d097000d4cccfb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!82 &1328898113
 AudioSource:
   m_ObjectHideFlags: 0
