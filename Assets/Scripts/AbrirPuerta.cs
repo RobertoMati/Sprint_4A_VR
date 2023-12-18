@@ -22,4 +22,14 @@ public class AbrirPuerta : MonoBehaviour
         animatorBoton.SetTrigger("Pulsado");
         animatorPuerta.SetTrigger("botonpulsado");
     }
+    
+    void OnCollisionEnter(Collision collision)
+    {
+        audioSource.clip = audioClip;
+        audioSource.PlayOneShot(audioClip);
+        Debug.Log("animandooo");
+        animatorBoton.SetTrigger("Pulsado");
+        animatorPuerta.SetTrigger("botonpulsado");
+    }
+
 }
